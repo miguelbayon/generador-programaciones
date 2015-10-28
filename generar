@@ -1,0 +1,16 @@
+#!/bin/bash
+
+while read line
+do
+   #echo -e "$line\n"
+   cp modeloESO ESO/"$line"
+   sed -i "1s/.*/###${line}/" ESO/"$line"
+done < materiasESO
+
+
+while read line
+do
+   #echo -e "$line\n"
+   cp modeloBachillerato Bachillerato/"$line"
+   sed -i "1s/.*/###${line}/" Bachillerato/"$line"
+done < materiasBachillerato
