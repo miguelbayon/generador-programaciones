@@ -3,14 +3,14 @@
 while read line
 do
    #echo -e "$line\n"
-   cp modeloESO ESO/"$line"
-   sed -i "1s/.*/###${line}/" ESO/"$line"
+   cp modeloESO ESO/"$line.md"
+   sed -i "1s/.*/###${line}/" ESO/"$line.md"
 done < materiasESO
 
 
 while read line
 do
    #echo -e "$line\n"
-   cp modeloBachillerato Bachillerato/"$line"
-   sed -i "1s/.*/###${line}/" Bachillerato/"$line"
+   cp modeloBachillerato Bachillerato/"$line.md"
+   sed -i "1s/.*/###${line}/" Bachillerato/"$line.md"
 done < materiasBachillerato
